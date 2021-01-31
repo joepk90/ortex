@@ -11,6 +11,8 @@ const Login = () => {
 
                     <h1 className="text-center">Login</h1>
 
+                    <LoginForm />
+
                 </Container>
             </Section>
 
