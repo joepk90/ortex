@@ -5,7 +5,7 @@ import Home from 'src/components/Home';
 
 const App = () => {
   return (
-    <div className="app bg-dark">
+    <div className="app">
       <Header />
       <Switch>
         <Route path="/login" component={Login} />
