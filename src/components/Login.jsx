@@ -11,7 +11,9 @@ const Login = () => {
 
                     <h1 className="text-center">Login</h1>
 
-                    <LoginForm />
+                    <div className="container-narrow mx-auto">
+                        <LoginForm />
+                    </div>
 
                 </Container>
             </Section>
