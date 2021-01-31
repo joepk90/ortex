@@ -1,7 +1,7 @@
 {
   "name": "ortex-tech-test",
   "version": "0.1.0",
-  "homepage": "https://joepk90.github.io/ortex/",
+  "homepage": "http://ortex.joepk.co.uk",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
