@@ -1,7 +1,13 @@
+import Container from 'src/components/common/container';
+
 const Login = () => {
     return (
         <div className="login">
-            <h1>Login</h1>
+
+            <Container>
+                <h1>Login</h1>
+            </Container>
+
         </div>
     );
 }
