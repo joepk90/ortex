@@ -1,7 +1,9 @@
+import Header from 'src/components/Header';
+
 const App = () => {
   return (
-    <div className="app">
-
+    <div className="app bg-dark">
+      <Header />
     </div>
   );
 }
