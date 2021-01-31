@@ -1,6 +1,8 @@
 import React from 'react';
 import Joi from 'joi-browser';
 import Form from 'src/components/common/form';
+import login from 'src/services/authService';
+import { Redirect } from 'react-router-dom';
 
 class LoginForm extends Form {
 
@@ -19,6 +21,14 @@ class LoginForm extends Form {
     };
 
     doSubmit = async () => {
+
+        const { data } = this.state;
+
+        login(data)
+
+        console.log('logged in');
+
+        window.location = '/';
 
     }
 
