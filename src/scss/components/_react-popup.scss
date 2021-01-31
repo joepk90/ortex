@@ -1,0 +1,11 @@
+.popup-content {
+    max-width: $container-narrow-width;
+  }
+
+  .popup-arrow {}
+
+  [role='tooltip'].popup-content {}
+  
+  .popup-overlay {}
+
+  [data-popup='tooltip'].popup-overlay {}
