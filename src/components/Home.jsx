@@ -1,13 +1,15 @@
 import Container from 'src/components/common/container';
-
+import Section from 'src/components/common/section';
 
 const Home = () => {
     return (
         <div className="home">
 
-            <Container>
-                <h1>Home</h1>
-            </Container>
+            <Section>
+                <Container>
+                    <h1 className="text-center">Home</h1>
+                </Container>
+            </Section>
 
         </div>
     );

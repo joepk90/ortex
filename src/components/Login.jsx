@@ -1,14 +1,20 @@
+import LoginForm from 'src/components/LoginForm';
 import Container from 'src/components/common/container';
+import Section from 'src/components/common/section';
 
 const Login = () => {
     return (
-        <div className="login">
+        <main className="login">
 
-            <Container>
-                <h1>Login</h1>
-            </Container>
+            <Section>
+                <Container>
 
-        </div>
+                    <h1 className="text-center">Login</h1>
+
+                </Container>
+            </Section>
+
+        </main>
     );
 }
 
