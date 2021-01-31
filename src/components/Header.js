@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from 'src/components/Navigation';
 import Logo from 'src/components/Logo';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -9,9 +10,9 @@ const Header = () => {
             <div className="container-fluid">
                 <div className="d-flex justify-content-between py-3">
 
-                    <a className="d-flex flex-column justify-content-center" href="/">
+                    <NavLink className="d-flex flex-column justify-content-center" to="/">
                         <Logo />
-                    </a>
+                    </NavLink>
 
                     <Navigation />
 
