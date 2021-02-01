@@ -14,7 +14,7 @@ class Home extends Component {
 
     componentDidMount() {
 
-        var socket = new Socket('ws://stream.tradingeconomics.com/?client=guest:guest')
+        var socket = new Socket('wss://stream.tradingeconomics.com/?client=guest:guest')
 
         socket.on('connect', () => {
 
