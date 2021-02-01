@@ -8,8 +8,8 @@ class Home extends Component {
 
     // hardcoded state as websocket does not seem to be working
     state = {
-        price: 1.2,
-        dt: '1612120749'
+        price: null,
+        dt: null
     }
 
     componentDidMount() {
@@ -17,10 +17,13 @@ class Home extends Component {
         var socket = new Socket('ws://stream.tradingeconomics.com/?client=guest:guest')
 
         socket.on('connect', () => {
-            socket.send('"{"topic": "subscribe", "to": "EURUSD:CUR"}"')
+
+            socket.send('{"topic": "subscribe", "to": "EURUSD:CUR"}')
         })
 
-        socket.on('data', (data) => {
+        socket.on('data', (response) => {
+
+            const data = JSON.parse(response);
 
             const { dt, price } = data;
 
