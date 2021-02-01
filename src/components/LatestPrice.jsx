@@ -10,7 +10,7 @@ class LatestPrice extends Component {
 
         if (!time) return '';
 
-        const timeString = moment.unix(time).format('dddd, MMMM Do, YYYY h:mm:ss A')
+        const timeString = moment(time).format('dddd MMMM Do YYYY, h:mm:ss a');
 
         if (!timeString) return '';
 
